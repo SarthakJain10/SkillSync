@@ -9,9 +9,9 @@ const Header = () => {
           SkillSync.<span className="text-blue-500">ai</span>
         </div>
         <div className="flex items-center gap-4">
-          <button className="text-gray-700 font-medium">Log In</button>
+          <button className="text-gray-700 font-medium">Sign In</button>
           <button className="px-6 py-2 border-2 border-blue-500 text-blue-500 rounded-full font-medium hover:bg-blue-50">
-            Register
+            Get Started
           </button>
         </div>
       </div>

@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer base {
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    @keyframes zoom-svg {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    }
+
+    .animate-zoom-svg {
+    animation: zoom-svg 6s ease-in-out infinite;
+    transform-origin: center center; /* ensures it zooms from center */
+    }
+}
+
