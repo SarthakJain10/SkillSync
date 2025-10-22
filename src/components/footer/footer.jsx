@@ -25,7 +25,7 @@ const Footer = () => {
               <h4 className="font-bold mb-4">About us</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-gray-600 text-sm hover:text-blue-500">Features</a></li>
-                <li><a href="#" className="text-gray-600 text-sm hover:text-blue-500">Portfolio</a></li>
+                <li><a href="https://sarthak-digital-resume.streamlit.app/" className="text-gray-600 text-sm hover:text-blue-500">Portfolio</a></li>
                 <li><a href="#" className="text-gray-600 text-sm hover:text-blue-500">Careers</a></li>
                 <li><a href="#" className="text-gray-600 text-sm hover:text-blue-500">Contact us</a></li>
               </ul>

@@ -39,7 +39,7 @@ const Hero = () => {
                 {/* Image */}
                 <div className="md:w-1/2 flex justify-center">
                 <img
-                    src="https://enhancv.com/_next/static/images/ats-checker-716fd8ba725f0a2f6ed622ea30fb0538.svg"
+                    src="/ats-checker-716fd8ba725f0a2f6ed622ea30fb0538.svg"
                     alt="ATS Checker Icon"
                     className="w-80 sm:w-[400px] object-contain"
                 />
