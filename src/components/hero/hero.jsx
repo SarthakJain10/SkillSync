@@ -59,7 +59,7 @@ const Hero = () => {
             <h3 className="text-2xl text-center font-bold mb-8">Get a free resume analysis</h3>
             <div className="border-4 border-dashed border-gray-300 rounded-2xl p-12 text-center bg-white">
               <div className="flex justify-center mb-6">
-                <img src="/src/components/hero/images/paper.png" alt="FileText" className="w-20 h-20 text-gray-800" />
+                <img src="/paper.png" alt="FileText" className="w-20 h-20 text-gray-800" />
               </div>
               <h4 className="text-xl font-bold mb-2">upload your resume and</h4>
               <h4 className="text-xl font-bold mb-4">get a free analysis</h4>
@@ -84,16 +84,16 @@ const Hero = () => {
         <div className="relative bg-[#9699FB] rounded-3xl max-w-3xl w-full py-20 my-20 text-center">
           {/* Corner Icons */}
           <div className="absolute top-0 -left-11 w-14 h-14">
-            <img src="/src/components/hero/images/pen.png" alt="pen" className="w-full h-full text-gray-600" />
+            <img src="/pen.png" alt="pen" className="w-full h-full text-gray-600" />
           </div>
           <div className="absolute -top-13 -right-3.5 w-20 h-18">
-            <img src="/src/components/hero/images/board.png" alt="presentation" className="w-full h-full text-gray-600" />
+            <img src="/board.png" alt="presentation" className="w-full h-full text-gray-600" />
           </div>
           <div className="absolute -bottom-6 -left-10.5 w-14 h-14">
-            <img src="/src/components/hero/images/thumbs_up.png" alt="thumbsUp" className="w-full h-full text-gray-600" />
+            <img src="/thumbs_up.png" alt="thumbsUp" className="w-full h-full text-gray-600" />
           </div>
           <div className="absolute -bottom-1.5 -right-12 w-15 h-15">
-            <img src="/src/components/hero/images/flower.png" alt="flower" className="w-full h-full text-gray-600" />
+            <img src="/flower.png" alt="flower" className="w-full h-full text-gray-600" />
           </div>
 
           {/* Text Content */}
