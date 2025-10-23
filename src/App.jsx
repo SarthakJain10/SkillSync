@@ -1,16 +1,21 @@
 import './App.css'
-import { FileText, Briefcase, Award, ThumbsUp, Presentation, Star, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
-import Hero from './components/hero/hero';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from './pages/LandingPage';
+import Upload from './pages/Upload';
+import Result from './pages/Result';
 
 function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-linear-to-br from-white via-sky-50 to-gray-100 text-gray-900">
-      <Header />
-      <Hero />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/result" element={<Result />} />
+        </Routes>
+      </Router>
+      
     </div>
   )
 }

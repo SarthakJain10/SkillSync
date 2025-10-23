@@ -1,10 +1,14 @@
 import './hero.css'
+import React, { useState } from "react";
 import ResumeChecker from "../ResumeChecker";
 import How_it_works from '../How_it_works';
 import FAQSection from '../FAQs';
 import TestimonialSection from '../Testimonials';
+import FileUploader from '../FileUploader';
 
 const Hero = () => {
+  const [showUploader, setShowUploader] = useState(false);
+  const [file, setFile] = useState(null);
 
   return (
     <div className="relative overflow-x-hidden overflow-y-clip will-change-transform">
@@ -25,15 +29,23 @@ const Hero = () => {
 
                     {/* Upload Box */}
                     <div className="mt-8">
+                        {/* Upload Box (acts as uploader directly) */}
                         <div className="border-2 border-dashed border-gray-300 rounded-3xl p-10 text-center bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
-                        <h4 className="text-xl font-semibold text-gray-800 mb-1">Upload your resume and</h4>
-                        <h4 className="text-xl font-semibold text-gray-800 mb-3">get a free analysis</h4>
-                        <p className="text-gray-500 text-sm">PDF & DOCX only. Max 2MB file size.</p>
-                        <button className="mt-4 bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-colors">
-                            Upload Now
-                        </button>
+                            {/* <h4 className="text-xl font-semibold text-gray-800 mb-1">
+                            Upload your resume and
+                            </h4>
+                            <h4 className="text-xl font-semibold text-gray-800 mb-3">
+                            get a free analysis
+                            </h4>
+                            <p className="text-gray-500 text-sm mb-6">
+                            PDF & DOCX only. Max 2MB file size.
+                            </p> */}
+
+                            {/* File Uploader always visible */}
+                            <FileUploader onFileSelect={(file) => console.log("Selected file:", file)} />
                         </div>
                     </div>
+
                 </div>
 
                 {/* Image */}
